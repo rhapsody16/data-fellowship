@@ -1,0 +1,607 @@
+[2022-11-28 05:53:28,170] {processor.py:163} INFO - Started process (PID=57) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 05:53:28,211] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 05:53:28,237] {logging_mixin.py:109} INFO - [2022-11-28 05:53:28,235] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 06:00:20,700] {processor.py:163} INFO - Started process (PID=105) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 06:00:20,728] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 06:00:20,763] {logging_mixin.py:109} INFO - [2022-11-28 06:00:20,760] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:24:49,052] {processor.py:163} INFO - Started process (PID=56) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:24:49,081] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 10:24:49,090] {logging_mixin.py:109} INFO - [2022-11-28 10:24:49,089] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:25:22,721] {logging_mixin.py:109} INFO - [2022-11-28 10:25:22,699] {timeout.py:36} ERROR - Process timed out, PID: 56
+[2022-11-28 10:25:23,344] {logging_mixin.py:109} INFO - [2022-11-28 10:25:22,740] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 10, in <module>
+    from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 38, in <module>
+    from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook, BigQueryJob
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 33, in <module>
+    from google.cloud.bigquery import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/__init__.py", line 35, in <module>
+    from google.cloud.bigquery.client import Client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 61, in <module>
+    from google.cloud.bigquery_storage_v1.services.big_query_read.client import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/__init__.py", line 25, in <module>
+    from google.cloud.bigquery_storage_v1 import client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/client.py", line 26, in <module>
+    from google.cloud.bigquery_storage_v1 import reader
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/reader.py", line 28, in <module>
+    import pandas
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/__init__.py", line 145, in <module>
+    from . import core
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/core/__init__.py", line 22, in <module>
+    from . import multiarray
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/core/multiarray.py", line 12, in <module>
+    from . import overrides
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/core/overrides.py", line 7, in <module>
+    from numpy.core._multiarray_umath import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 56
+[2022-11-28 10:25:37,890] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:26:47,504] {processor.py:163} INFO - Started process (PID=76) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:26:47,695] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 10:26:48,049] {logging_mixin.py:109} INFO - [2022-11-28 10:26:47,898] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:27:40,384] {logging_mixin.py:109} INFO - [2022-11-28 10:27:40,283] {timeout.py:36} ERROR - Process timed out, PID: 76
+[2022-11-28 10:27:42,291] {logging_mixin.py:109} INFO - [2022-11-28 10:27:40,511] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 9, in <module>
+    from google.cloud import storage
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/__init__.py", line 34, in <module>
+    from google.cloud.storage.version import __version__
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 917, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 76
+[2022-11-28 10:29:12,170] {processor.py:163} INFO - Started process (PID=86) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:29:12,364] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 10:29:12,443] {logging_mixin.py:109} INFO - [2022-11-28 10:29:12,442] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:39:06,121] {logging_mixin.py:109} INFO - [2022-11-28 10:38:56,311] {timeout.py:36} ERROR - Process timed out, PID: 86
+[2022-11-28 10:39:51,999] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakValueDictionary.__init__.<locals>.remove at 0x7f37454e30e0>
+[2022-11-28 10:40:14,529] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2022-11-28 10:40:44,520] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.7/weakref.py", line 109, in remove
+[2022-11-28 10:40:45,285] {logging_mixin.py:109} WARNING -     def remove(wr, selfref=ref(self), _atomic_removal=_remove_dead_weakref):
+[2022-11-28 10:40:45,294] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+[2022-11-28 10:40:45,942] {logging_mixin.py:109} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2022-11-28 10:40:46,087] {logging_mixin.py:109} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 86
+[2022-11-28 10:41:15,246] {processor.py:163} INFO - Started process (PID=115) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 10:41:20,723] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 10:41:33,330] {logging_mixin.py:109} INFO - [2022-11-28 10:41:29,534] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:18:13,277] {processor.py:163} INFO - Started process (PID=57) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:18:13,297] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:18:13,304] {logging_mixin.py:109} INFO - [2022-11-28 11:18:13,304] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:24:51,996] {processor.py:163} INFO - Started process (PID=142) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:24:52,001] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:24:52,006] {logging_mixin.py:109} INFO - [2022-11-28 11:24:52,005] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:24:59,750] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:25:45,576] {processor.py:163} INFO - Started process (PID=171) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:25:45,600] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:25:45,619] {logging_mixin.py:109} INFO - [2022-11-28 11:25:45,617] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:26:29,221] {logging_mixin.py:109} INFO - [2022-11-28 11:26:28,559] {timeout.py:36} ERROR - Process timed out, PID: 171
+[2022-11-28 11:26:38,623] {logging_mixin.py:109} INFO - [2022-11-28 11:26:30,162] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 10, in <module>
+    from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 38, in <module>
+    from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook, BigQueryJob
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 33, in <module>
+    from google.cloud.bigquery import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/__init__.py", line 35, in <module>
+    from google.cloud.bigquery.client import Client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 61, in <module>
+    from google.cloud.bigquery_storage_v1.services.big_query_read.client import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/__init__.py", line 25, in <module>
+    from google.cloud.bigquery_storage_v1 import client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/client.py", line 26, in <module>
+    from google.cloud.bigquery_storage_v1 import reader
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/reader.py", line 28, in <module>
+    import pandas
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/__init__.py", line 156, in <module>
+    from . import random
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/random/__init__.py", line 179, in <module>
+    from . import _pickle
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/random/_pickle.py", line 6, in <module>
+    from ._generator import Generator
+  File "<frozen importlib._bootstrap>", line 416, in parent
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 171
+[2022-11-28 11:26:54,709] {processor.py:174} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 168, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 687, in _deactivate_missing_dags
+    .update({DagModel.is_active: False}, synchronize_session="fetch")
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1806, in _do_pre_synchronize
+    select_stmt, mapper=self.mapper, params=query._params
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-11-28 11:27:10,146] {processor.py:163} INFO - Started process (PID=180) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:27:10,157] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:27:10,162] {logging_mixin.py:109} INFO - [2022-11-28 11:27:10,161] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:27:15,519] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:28:46,758] {processor.py:163} INFO - Started process (PID=200) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:28:46,763] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:28:46,768] {logging_mixin.py:109} INFO - [2022-11-28 11:28:46,767] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:30:37,549] {processor.py:163} INFO - Started process (PID=202) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:30:37,562] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:30:37,580] {logging_mixin.py:109} INFO - [2022-11-28 11:30:37,579] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:32:43,684] {processor.py:163} INFO - Started process (PID=211) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:32:43,688] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:32:43,692] {logging_mixin.py:109} INFO - [2022-11-28 11:32:43,691] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:32:47,970] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:34:34,614] {processor.py:163} INFO - Started process (PID=230) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:34:34,640] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:34:34,651] {logging_mixin.py:109} INFO - [2022-11-28 11:34:34,650] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:35:06,063] {logging_mixin.py:109} INFO - [2022-11-28 11:35:05,265] {timeout.py:36} ERROR - Process timed out, PID: 230
+[2022-11-28 11:35:09,219] {logging_mixin.py:109} INFO - [2022-11-28 11:35:06,827] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 10, in <module>
+    from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 916, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 230
+[2022-11-28 11:35:24,350] {processor.py:174} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 168, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 687, in _deactivate_missing_dags
+    .update({DagModel.is_active: False}, synchronize_session="fetch")
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1806, in _do_pre_synchronize
+    select_stmt, mapper=self.mapper, params=query._params
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-11-28 11:45:42,986] {processor.py:163} INFO - Started process (PID=235) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:45:43,000] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:45:43,011] {logging_mixin.py:109} INFO - [2022-11-28 11:45:43,008] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:45:50,288] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:46:52,793] {processor.py:163} INFO - Started process (PID=254) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:46:52,801] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:46:52,807] {logging_mixin.py:109} INFO - [2022-11-28 11:46:52,806] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:47:23,358] {logging_mixin.py:109} INFO - [2022-11-28 11:47:23,011] {timeout.py:36} ERROR - Process timed out, PID: 254
+[2022-11-28 11:47:25,934] {logging_mixin.py:109} INFO - [2022-11-28 11:47:23,448] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 10, in <module>
+    from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 38, in <module>
+    from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook, BigQueryJob
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 33, in <module>
+    from google.cloud.bigquery import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/__init__.py", line 35, in <module>
+    from google.cloud.bigquery.client import Client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 61, in <module>
+    from google.cloud.bigquery_storage_v1.services.big_query_read.client import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/__init__.py", line 25, in <module>
+    from google.cloud.bigquery_storage_v1 import client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/client.py", line 26, in <module>
+    from google.cloud.bigquery_storage_v1 import reader
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/reader.py", line 28, in <module>
+    import pandas
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/__init__.py", line 148, in <module>
+    from . import lib
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/lib/__init__.py", line 25, in <module>
+    from .index_tricks import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/lib/index_tricks.py", line 13, in <module>
+    from .function_base import diff
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/lib/function_base.py", line 36, in <module>
+    from numpy.lib.histograms import histogram, histogramdd
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/lib/histograms.py", line 679, in <module>
+    density=None):
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/core/overrides.py", line 202, in decorator
+    source, filename='<__array_function__ internals>', mode='exec')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 254
+[2022-11-28 11:47:40,506] {processor.py:174} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 168, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 687, in _deactivate_missing_dags
+    .update({DagModel.is_active: False}, synchronize_session="fetch")
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1806, in _do_pre_synchronize
+    select_stmt, mapper=self.mapper, params=query._params
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-11-28 11:47:56,922] {processor.py:163} INFO - Started process (PID=263) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:47:56,933] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:47:56,938] {logging_mixin.py:109} INFO - [2022-11-28 11:47:56,937] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:48:31,721] {logging_mixin.py:109} INFO - [2022-11-28 11:48:28,726] {timeout.py:36} ERROR - Process timed out, PID: 263
+[2022-11-28 11:48:39,837] {logging_mixin.py:109} INFO - [2022-11-28 11:48:36,574] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 10, in <module>
+    from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 38, in <module>
+    from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook, BigQueryJob
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 33, in <module>
+    from google.cloud.bigquery import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/__init__.py", line 35, in <module>
+    from google.cloud.bigquery.client import Client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 61, in <module>
+    from google.cloud.bigquery_storage_v1.services.big_query_read.client import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/__init__.py", line 25, in <module>
+    from google.cloud.bigquery_storage_v1 import client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/client.py", line 27, in <module>
+    from google.cloud.bigquery_storage_v1.services import big_query_read
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/services/big_query_read/__init__.py", line 16, in <module>
+    from .client import BigQueryReadClient
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/services/big_query_read/client.py", line 37, in <module>
+    from google.cloud.bigquery_storage_v1.types import arrow
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/types/__init__.py", line 16, in <module>
+    from .arrow import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/types/arrow.py", line 16, in <module>
+    import proto  # type: ignore
+  File "/home/airflow/.local/lib/python3.7/site-packages/proto/__init__.py", line 15, in <module>
+    from .enums import Enum
+  File "/home/airflow/.local/lib/python3.7/site-packages/proto/enums.py", line 19, in <module>
+    from proto import _file_info
+  File "/home/airflow/.local/lib/python3.7/site-packages/proto/_file_info.py", line 24, in <module>
+    from proto.marshal.rules.message import MessageRule
+  File "/home/airflow/.local/lib/python3.7/site-packages/proto/marshal/__init__.py", line 15, in <module>
+    from .marshal import Marshal
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1280, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1252, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1368, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1408, in _fill_cache
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_ingestion_gcs_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 263
+[2022-11-28 11:48:41,637] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:48:41,887] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag.py took 44.978 seconds
+[2022-11-28 11:50:39,266] {processor.py:163} INFO - Started process (PID=281) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-28 11:50:39,328] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-28 11:50:39,350] {logging_mixin.py:109} INFO - [2022-11-28 11:50:39,347] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py

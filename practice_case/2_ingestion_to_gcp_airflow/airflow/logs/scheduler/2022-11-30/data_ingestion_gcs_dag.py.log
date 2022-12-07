@@ -1,0 +1,3 @@
+[2022-11-30 01:10:06,268] {processor.py:163} INFO - Started process (PID=50) to work on /opt/airflow/dags/data_ingestion_gcs_dag.py
+[2022-11-30 01:10:06,276] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag.py for tasks to queue
+[2022-11-30 01:10:06,280] {logging_mixin.py:109} INFO - [2022-11-30 01:10:06,280] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag.py
