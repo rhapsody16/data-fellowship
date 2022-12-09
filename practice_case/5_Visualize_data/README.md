@@ -1,4 +1,4 @@
-Create Dashboard using Google Data Studio
+# **Create Dashboard using Google Data Studio **
 
 ![Dashboard with Google Data Studio](dashboard.jpg)
 
