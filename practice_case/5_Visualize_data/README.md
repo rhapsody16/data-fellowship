@@ -1,6 +1,6 @@
 # **Create Dashboard using Google Data Studio**
 
-![Dashboard with Google Data Studio](dashboard.jpg)
+![Dashboard with Google Data Studio](my_dashboard.jpg)
 
 **Description:**
 1. In the scorecard section there is data on the number of records, total passenger count, total fare_amount, and total amount in a year, namely 2019
