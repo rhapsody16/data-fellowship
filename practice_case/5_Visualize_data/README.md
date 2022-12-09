@@ -2,7 +2,7 @@
 
 ![Dashboard with Google Data Studio](dashboard.jpg)
 
-Description:
+**Description:**
 1. In the scorecard section there is data on the number of records, total passenger count, total fare_amount, and total amount in a year, namely 2019
 2. The first chart (time series) is the Total Amount per Month where the highest total amount occurs in March 2019
 3. The second chart (time series) is the Average Yellow Taxi Tips per Day of Week, where the highest average occurs on Thursday, which is 2.3
