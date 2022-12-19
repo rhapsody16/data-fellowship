@@ -10,5 +10,6 @@ Fundamental Syllabus:
 5. Visualizing The Transformed Data & Batch Processing
 6. Spark SQL and Data Frames
 7. Kafka (Streaming Processing)
-8. Avro and Schema Registry (Streaming Processing)
-9. Kafka Stream (Streaming Processing)
+8. Kafka Stream (Streaming Processing)
+9. Avro and Schema Registry (Streaming Processing)
+
